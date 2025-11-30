@@ -4,6 +4,10 @@ echo "Запуск shm_mgr..."
 ./bin/shm_mgr &
 sleep 1
 
+echo "Запуск наблюдателя..."
+./bin/obs &
+sleep 1
+
 echo "Запуск продавца A..."
 ./bin/seller A &
 sleep 1
@@ -19,4 +23,3 @@ echo "Запуск покупателей..."
 
 echo "Все процессы запущены."
 wait
-

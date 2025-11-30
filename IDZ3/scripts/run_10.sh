@@ -4,11 +4,17 @@ echo "Запуск shm_mgr..."
 ./bin/shm_mgr &
 sleep 1
 
-echo "Запуск продавца A..."
-./bin/seller A &
+echo "Запуск диспетчера..."
+./bin/disp10 &
 sleep 1
 
-echo "Запуск продавца B..."
+echo "Запуск наблюдателей..."
+./bin/obs10 0 &
+./bin/obs10 1 &
+sleep 1
+
+echo "Запуск продавцов..."
+./bin/seller A &
 ./bin/seller B &
 sleep 1
 
