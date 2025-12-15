@@ -1,0 +1,4 @@
+buyers=8
+day=8
+seed=42
+
